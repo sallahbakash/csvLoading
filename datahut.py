@@ -5,7 +5,7 @@ from langchain.agents import create_csv_agent
 from langchain.llms import OpenAI
 
 # Initialize the API key
-openai_api_key = "your api key"
+openai_api_key = "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"
 
 # Set page title
 st.set_page_config(page_title="CSV Reader")
