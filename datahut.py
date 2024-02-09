@@ -26,7 +26,7 @@ if user_csv is not None:
    # Get the user input
    user_input = get_text()
    # Initialize the OpenAI model
-   llm = OpenAI(openai_api_key=openai_api_key, temperature=0)
+   llm = ChatOpenAI(model_name="gpt-3.5-turbo",openai_api_key=openai_api_key, temperature=0)
    # Initialize the agent
    agent = create_csv_agent(llm, user_csv, verbose=True)
    # Initialize the session state
